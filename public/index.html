@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Hospital Management System</h1>
+    
+    <div class="form-container">
+        <h2>Add Patient Record</h2>
+        <form id="patient-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="contact" placeholder="Contact" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="condition" placeholder="Condition" required>
+            <button type="submit">Add Patient</button>
+        </form>
+    </div>
+
+    <div class="records-container">
+        <h2>Patient Records</h2>
+        <table id="patient-records">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Condition</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
